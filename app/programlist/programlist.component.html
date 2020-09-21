@@ -1,0 +1,39 @@
+<div class="add-band">
+  <br>
+<h2>Program List</h2>
+</div>
+<body class="add-image">
+<table class="table table-striped">
+    <thead class="addhead-color">
+    <tr>
+        <th>ID</th>&nbsp;
+        <th>Course Name</th>&nbsp;
+        <th>Description</th>&nbsp;
+        <th>Eligibility</th>&nbsp;
+        <th>Duration</th>&nbsp;
+        <th>DegreeCertificateOffered</th>
+      </tr>
+    </thead>
+    <tbody class="addfont-color" *ngFor="let program of programs;let i = index">
+            <td>{{program.id}}</td>&nbsp;
+            <td>{{program.name}}</td>&nbsp;
+            <td>{{program.description}}</td>&nbsp;
+            <td>{{program.eligibility}}</td>&nbsp;
+            <td>{{program.duration}}</td>&nbsp;
+            <td>{{program.degreeCertificateOffered}}</td>
+            <button type="button" class="btn btn-primary" (click)="update(program.id)" routerLink="/update" routerLinkActive="active">UPDATE</button>&nbsp;
+            &nbsp; <button type="button" class="btn btn-danger" (click)="delete(program.id)">DELETE</button>
+        </tbody>
+        
+      
+</table>
+
+</body>
+<div class="add-footer"><button type="button" class="btn btn-success" routerLink="/addprogram" routerLinkActive="active">click here</button> TO ADD A NEW PROGRAM
+<br>
+<br>
+<h2 class="add-logo">UNIVERSITY ADMISSSION SYSTEM<br>PROGRAM SERVICE MANAGEMENT SYSTEM</h2>
+</div>
+
+
+

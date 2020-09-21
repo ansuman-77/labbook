@@ -1,0 +1,40 @@
+.add-image{
+    background-image: url("home.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 700px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }.addfont-color{
+    color: honeydew;
+    font-style: italic;
+
+}
+.addhead-color{
+    color: lawngreen;
+}
+.add-band{
+  background-image: url("band.png"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 140px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  font-style: italic;
+  color: azure;
+}
+.add-footer{
+  background-image: url("band.png"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 180px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  font-style: italic;
+  color: azure;
+}
+.add-logo
+{
+  font-size: x-large;
+  font-style:italic ;
+}

@@ -1,0 +1,48 @@
+<body class="add-image">
+    <div class="add-band">
+        <br>
+        <br>
+<h2>Update Program</h2>
+</div>
+   
+    <div >
+        
+        <form #f="ngForm" (ngSubmit)="onUpdateProgram(f)">
+           
+       
+            
+            <label class="addfont-color"for="Id">Enter Course:</label>
+        <br>
+            <input type="text"  placeholder={{ProgramUpdate?.name}} ngModel name="name" required>
+            <br>
+            <label for="Id" class="addfont-color">Enter Description:</label>
+            <br>
+            <input type="text" placeholder={{ProgramUpdate?.description}} ngModel name="description" required>
+            <br>
+            <label for="Id" class="addfont-color">Enter Eligibility:</label>
+            <br>
+            <input type="text" placeholder={{ProgramUpdate?.eligibility}} ngModel name="eligibility" required>
+            <br>
+            <label  for="Id" class="addfont-color">Enter Duration:</label>
+            <br>
+            <input type="text" placeholder={{ProgramUpdate?.duration}} ngModel name="duration" required>
+            <br>
+            <label for="Id" class="addfont-color">Enter Degree Certificate:</label>
+            <br>
+            <input type="text"  placeholder={{ProgramUpdate?.degreeCertificateOffered}} ngModel name="degreeCertificateOffered" required>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-dark">Update Program</button>&nbsp;
+            
+            <button type="button" class="btn btn-success" routerLink="/list" routerLinkActive="active">View Programs</button>
+    
+    
+    
+    
+        </form>
+    
+    </div>
+    
+    <div class="add-footer addhead-color"><br><br><br>UNIVERSITY ADMISSION SYSTEM<br>PROGRAM SERVICE MANAGEMENT SYSTEM</div>
+    </body>
+    

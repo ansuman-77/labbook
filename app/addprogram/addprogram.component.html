@@ -1,0 +1,49 @@
+<body class="add-image">
+    <div class="add-band">
+        <br>
+        <br>
+        
+    <h2>Add Program</h2>
+</div>
+    <div >
+        
+        <form #f="ngForm" (ngSubmit)="onAddProgram(f)">
+           
+       
+            
+            
+            <br>
+            <label for="id" class="addfont-color">Enter Course:</label>
+        <br>
+            <input type="text"  placeholder="Course Name" ngModel name="name" required>
+            <br>
+            <label for="id" class="addfont-color">Enter Description:</label>
+            <br>
+            <input type="text"  placeholder="Decription" ngModel name="description" required>
+            <br>
+            <label for="id" class="addfont-color">Enter Eligibility:</label>
+            <br>
+            <input type="text"  placeholder="Eligibility" ngModel name="eligibility" required>
+            <br>
+            <label  for="id" class="addfont-color">Enter Duration:</label>
+            <br>
+            <input type="text"  placeholder="duration" ngModel name="duration" required>
+            <br>
+            <label for="id" class="addfont-color">Enter Degree Certificate:</label>
+            <br>
+            <input type="text"  placeholder="DegreeCertificateOffered" ngModel name="degreeCertificateOffered" required>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-dark">Add Program</button>&nbsp;
+            
+            <button type="button" class="btn btn-success" routerLink="/list" routerLinkActive="active">View Programs</button>
+    
+    
+    
+    
+        </form>
+        <div class="add-footer add-logo"><br><br><br>UNIVERSITY ADMISSION SYSTEM<br>PROGRAM SERVICE MANAGEMENT SYSTEM
+        </div>
+    
+    </div>
+    </body>
